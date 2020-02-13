@@ -1,0 +1,6 @@
+genrule(
+    name = "env",
+    srcs = [],
+    outs = ["env.txt"],
+    cmd = "echo $$MY_OPTION > $@",
+)

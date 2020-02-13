@@ -1,0 +1,6 @@
+build --enable_platform_specific_config
+
+build --action_env=MY_OPTION=global
+build:macos --action_env=MY_OPTION=mac
+build:linux --action_env=MY_OPTION=linux
+build:override --action_env=MY_OPTION=override
